@@ -1,0 +1,9 @@
+.aboutme .details {
+  height: calc(100vh - 4.2rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.aboutme .details .content {
+  color: var(--highlightColor);
+}

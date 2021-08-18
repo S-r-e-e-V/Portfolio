@@ -1,0 +1,14 @@
+.education .details {
+  height: calc(100vh - 4.2rem);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  justify-items: center;
+  align-items: center;
+}
+.education .details > div {
+  width: 25rem;
+}
+.education .details .qualification {
+  font-weight: 500;
+  font-size: 1.2rem;
+}

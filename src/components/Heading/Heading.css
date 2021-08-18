@@ -1,0 +1,10 @@
+.heading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 3rem;
+  border-bottom: solid var(--secondaryColor) 0.2rem;
+  border-radius: 0.2rem;
+}
+.heading span {
+  color: var(--highlightColor);
+}

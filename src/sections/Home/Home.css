@@ -1,0 +1,29 @@
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .profile-name {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.home .profile-name .name {
+  color: var(--highlightColor);
+}
+.home .about-me {
+  margin-bottom: 2rem;
+}
+.home .about-me-btn {
+  cursor: pointer;
+  background-color: var(--defaultBtnColor);
+  width: 10rem;
+  text-align: center;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3rem;
+}
+.home .about-me-btn:hover {
+  background-color: var(--highlightColor);
+  color: var(--primaryColor);
+}

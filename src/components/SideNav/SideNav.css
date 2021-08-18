@@ -1,0 +1,42 @@
+.sidenav {
+  padding: auto;
+  padding-top: 2rem;
+  background-color: var(--secondaryColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.sidenav .profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: solid var(--highlightColor) 0.2rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.sidenav .profile-pic img {
+  width: 100%;
+}
+.sidenav .name {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+.sidenav .section-btns {
+  margin-top: 2rem;
+  text-align: center;
+}
+.sidenav .section-btns > div {
+  cursor: pointer;
+  margin: 0.4rem 0rem;
+  background-color: var(--defaultBtnColor);
+  padding: 0.3rem 4rem;
+  border-radius: 3rem;
+}
+.sidenav .section-btns > div:hover {
+  background-color: var(--highlightColor);
+  color: var(--primaryColor);
+}
