@@ -37,9 +37,9 @@ export default function AboutMe() {
               {Profile.languageSkills.otherLanguages.join(",")}
             </span>
           </div>
-          <a href="/src/constants/Sreekanth V_CV.pdf" download>
+          {/* <a href="/src/constants/Sreekanth V_CV.pdf" download>
             Download CV
-          </a>
+          </a> */}
         </div>
         <div className="section2">
           <div className="boxes">
