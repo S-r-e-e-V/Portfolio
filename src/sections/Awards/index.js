@@ -3,7 +3,7 @@ import "./Awards.css";
 
 import Heading from "../../components/Heading";
 
-import { Awards as awards } from "../../constants/Portfolio";
+import Profile from "../../constants/Portfolio";
 export default function Awards() {
   return (
     <div className="awards">
@@ -15,7 +15,7 @@ export default function Awards() {
         }
       />
       <div className="details">
-        {awards.map((item, index) => (
+        {Profile.awards.map((item, index) => (
           <div key={index}>
             <div className="date">{item.date}</div>
             <div className="title">{item.title}</div>

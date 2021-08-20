@@ -3,7 +3,7 @@ import "./Publications.css";
 import React from "react";
 
 import Heading from "../../components/Heading";
-import { Publications as publication } from "../../constants/Portfolio";
+import Profile from "../../constants/Portfolio";
 
 import ReactTooltip from "react-tooltip";
 export default function Publications() {
@@ -20,7 +20,7 @@ export default function Publications() {
         }
       />
       <div className="details">
-        {publication.map((item, index) => (
+        {Profile.publications.map((item, index) => (
           <div
             key={index}
             onClick={() => link(item.link)}

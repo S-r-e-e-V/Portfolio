@@ -10,6 +10,7 @@ body {
   background-color: var(--primaryColor);
   color: var(--fontColor);
   font-size: 1.3rem;
+  scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
   width: 8px;

@@ -1,3 +1,4 @@
+import Profile from "./Profile.json";
 const ProfileInfo = {
   name: "Sreekanth V",
   dob: "25/05/1998",
@@ -84,7 +85,6 @@ const TechnicalSkills = [
   { title: "Databases", list: ["SQL/MYSQL", "PostgresSQL", "MongoDB"] },
   { title: "Tools", list: ["Android Studio", "Git"] },
 ];
-
 const Publications = [
   {
     title: "Self-Driving Car using Convolutional Neural Network",
@@ -130,13 +130,15 @@ const Awards = [
     date: "17/02/2019",
   },
 ];
-export {
-  ProfileInfo,
-  workExperience,
-  Education,
-  LanguageSkills,
-  TechnicalSkills,
-  Publications,
-  Projects,
-  Awards,
-};
+export default Profile;
+// replace
+
+// "aboutMe": "Recent Computer Science undergraduate working as a Software Developer with full-stack development expertise, and continuing to obtain a master's degree at a renowned university that provides me opportunities to express my ideas and expand my knowledge. I wish to be a part of a dynamic team that is dedicated to the institution's success."
+
+//   work_experience 👷🏻‍♀️
+//   awards 🏆
+//   projects 🅿
+//   publications 📰
+//   skill 👩🏻‍💻
+//   language 🔠
+//   education 🎓

@@ -1,17 +1,15 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, forwardRef } from "react";
 import "./SideNav.css";
 
 import Images from "../../assets";
 import { BiMenu } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 
-export default function SideNav() {
+import { Link, animateScroll as scroll } from "react-scroll";
+
+const SideNav = () => {
   const node = useRef();
   const [isOpen, setisOpen] = useState(false);
-  const toggleSidenav = () => {
-    setisOpen(!isOpen);
-  };
-  console.log(isOpen);
   useEffect(() => {
     window.addEventListener("resize", viewPort);
     return () => window.removeEventListener("resize", viewPort);
@@ -42,16 +40,13 @@ export default function SideNav() {
         <div className="name">Sreekanth V</div>
         <div className="designation">Software Developer</div>
         <div className="section-btns">
-          <div>Home</div>
-
-          <a href="#about">
-            <div>About</div>
-          </a>
-          <div>Work Experience</div>
-          <div>Education</div>
-          <div>Projects</div>
-          <div>Publications</div>
-          <div>Awards</div>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#experience">Work Experience</a>
+          <a href="#education">Education</a>
+          <a href="#project">Projects</a>
+          <a href="#publication">Publications</a>
+          <a href="#award">Awards</a>
         </div>
         {isOpen ? (
           <AiOutlineClose
@@ -65,4 +60,5 @@ export default function SideNav() {
       <div className={`dim-background ${isOpen ? "active" : "hide"}`}></div>
     </>
   );
-}
+};
+export default SideNav;

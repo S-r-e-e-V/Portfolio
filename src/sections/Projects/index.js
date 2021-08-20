@@ -3,7 +3,7 @@ import "./Projects.css";
 
 import Heading from "../../components/Heading";
 
-import { Projects as project } from "../../constants/Portfolio";
+import Profile from "../../constants/Portfolio";
 export default function Projects() {
   return (
     <div className="projects">
@@ -15,7 +15,7 @@ export default function Projects() {
         }
       />
       <div className="details">
-        {project.map((item, index) => (
+        {Profile.projects.map((item, index) => (
           <div key={index}>
             <div className="date">{item.date}</div>
             <div className="title">{item.title}</div>

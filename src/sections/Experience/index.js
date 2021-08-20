@@ -2,7 +2,7 @@ import React from "react";
 import "./Experience.css";
 
 import Heading from "../../components/Heading";
-import { workExperience } from "../../constants/Portfolio";
+import Profile from "../../constants/Portfolio";
 
 import { MdWork } from "react-icons/md";
 export default function Experience() {
@@ -16,7 +16,7 @@ export default function Experience() {
         }
       />
       <div className="details">
-        {workExperience.map((item, index) => (
+        {Profile.workExperience.map((item, index) => (
           <div key={index}>
             <div className="symbol">
               <span className="circle">

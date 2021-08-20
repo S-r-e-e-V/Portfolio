@@ -2,7 +2,7 @@ import React from "react";
 import "./Education.css";
 
 import Heading from "../../components/Heading";
-import { Education as Edu } from "../../constants/Portfolio";
+import Profile from "../../constants/Portfolio";
 
 import { FaGraduationCap } from "react-icons/fa";
 export default function Education() {
@@ -16,7 +16,7 @@ export default function Education() {
         }
       />
       <div className="details">
-        {Edu.map((item, index) => (
+        {Profile.education.map((item, index) => (
           <div key={index}>
             <div className="symbol">
               <span className="circle">

@@ -32,14 +32,19 @@
   margin-top: 2rem;
   text-align: center;
 }
-.sidenav .section-btns > div {
+.sidenav .section-btns > a {
+  text-decoration: none;
+  color: var(--fontColor);
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0.4rem 0rem;
   background-color: var(--defaultBtnColor);
   padding: 0.3rem 4rem;
   border-radius: 3rem;
 }
-.sidenav .section-btns > div:hover {
+.sidenav .section-btns > a:hover {
   background-color: var(--highlightColor);
   color: var(--primaryColor);
 }
