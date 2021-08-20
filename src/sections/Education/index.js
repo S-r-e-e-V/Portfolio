@@ -2,9 +2,9 @@ import React from "react";
 import "./Education.css";
 
 import Heading from "../../components/Heading";
-
 import { Education as Edu } from "../../constants/Portfolio";
 
+import { FaGraduationCap } from "react-icons/fa";
 export default function Education() {
   return (
     <div className="education">
@@ -18,10 +18,22 @@ export default function Education() {
       <div className="details">
         {Edu.map((item, index) => (
           <div key={index}>
-            <div>{`${item.start} - ${item.end}`}</div>
-            <div className="qualification">{item.title}</div>
-            <div>{item.from}</div>
-            <div>{item.location}</div>
+            <div className="symbol">
+              <span className="circle">
+                <FaGraduationCap className="icon" />
+              </span>
+              <span className="line"></span>
+            </div>
+            <div className="content">
+              <div className="date">
+                {item.start} {item.end ? `- ${item.end}` : ""}
+              </div>
+              <div className="title">{item.title}</div>
+              <div>{item.from}</div>
+              <div>
+                Location : <span>{item.location}</span>
+              </div>
+            </div>
           </div>
         ))}
       </div>

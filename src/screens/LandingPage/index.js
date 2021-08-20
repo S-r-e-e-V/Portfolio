@@ -6,6 +6,9 @@ import Home from "../../sections/Home";
 import AboutMe from "../../sections/AboutMe";
 import Education from "../../sections/Education";
 import Experience from "../../sections/Experience";
+import Projects from "../../sections/Projects";
+import Awards from "../../sections/Awards";
+import Publications from "../../sections/Publications";
 
 export default function LandingPage() {
   return (
@@ -13,9 +16,14 @@ export default function LandingPage() {
       <SideNav />
       <div className="sections">
         <Home />
-        <AboutMe />
-        <Education />
+        <div id="about">
+          <AboutMe />
+        </div>
         <Experience />
+        <Education />
+        <Projects />
+        <Awards />
+        <Publications />
       </div>
     </div>
   );

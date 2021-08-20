@@ -1,0 +1,28 @@
+import React from "react";
+import "./Projects.css";
+
+import Heading from "../../components/Heading";
+
+import { Projects as project } from "../../constants/Portfolio";
+export default function Projects() {
+  return (
+    <div className="projects">
+      <Heading
+        heading={
+          <div>
+            My <span>Projects</span>
+          </div>
+        }
+      />
+      <div className="details">
+        {project.map((item, index) => (
+          <div key={index}>
+            <div className="date">{item.date}</div>
+            <div className="title">{item.title}</div>
+            <div className="content">{item.details}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}

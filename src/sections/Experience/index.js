@@ -2,8 +2,9 @@ import React from "react";
 import "./Experience.css";
 
 import Heading from "../../components/Heading";
-
 import { workExperience } from "../../constants/Portfolio";
+
+import { MdWork } from "react-icons/md";
 export default function Experience() {
   return (
     <div className="experience">
@@ -17,10 +18,27 @@ export default function Experience() {
       <div className="details">
         {workExperience.map((item, index) => (
           <div key={index}>
-            <div>{`${item.start} - ${item.end}`}</div>
-            <div className="designation">{item.designation}</div>
-            <div>{item.company}</div>
-            <div>{item.location}</div>
+            <div className="symbol">
+              <span className="circle">
+                <MdWork className="icon" />
+              </span>
+              <span className="line"></span>
+            </div>
+            <div className="content">
+              <div className="date">
+                {item.start} {item.end ? `- ${item.end}` : ""}
+              </div>
+              <div className="title">{item.designation}</div>
+              <div>
+                Company : <span>{item.company}</span>
+              </div>
+              <div>
+                Location : <span>{item.location}</span>
+              </div>
+              <div>
+                Details :<span> {item.details}</span>
+              </div>
+            </div>
           </div>
         ))}
       </div>

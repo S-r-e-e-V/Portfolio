@@ -16,8 +16,24 @@ const workExperience = [
     company: "Riafy Technologies",
     location: "Kochi, India",
     start: "27/05/2020",
-    end: "current",
+    end: "Current",
     details: "Full-stack developer experienced in Node.js and React.js",
+  },
+  {
+    designation: "Internship",
+    company: "Pricesenz",
+    location: "Kochi, India",
+    start: "04/2020",
+    end: "05/2020",
+    details: "Resume Parser project with NLP",
+  },
+  {
+    designation: "Internship",
+    company: "Nest Cyber Campus",
+    location: "Kochi, India",
+    start: "2017",
+    end: "",
+    details: "Resume Parser project with NLP",
   },
 ];
 const Education = [
@@ -42,8 +58,8 @@ const Education = [
     title: "SECONDARY EDUCATION",
     from: "Gayathri Central School",
     location: "Puliyannoor, Kottayam, India",
-    start: "",
-    end: "",
+    start: "2013",
+    end: "2014",
     mark: "CGPA - 9.2",
   },
 ];
@@ -110,7 +126,7 @@ const Awards = [
   {
     title: "Hackathon – APJ Abdul Kalam Technological University",
     details:
-      "First prize for Life Source project in University level hackathon competition.",
+      "First prize for Life Source project in University level Project presentation.",
     date: "17/02/2019",
   },
 ];

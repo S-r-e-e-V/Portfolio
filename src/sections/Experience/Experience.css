@@ -3,12 +3,54 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   justify-items: center;
-  align-items: center;
 }
 .experience .details > div {
+  display: flex;
   width: 25rem;
+  padding: 4rem 0rem;
 }
-.experience .details .designation {
+.experience .details .date {
+  font-size: 0.8rem;
+  width: 10rem;
+  padding: 0.3rem;
+  text-align: center;
+  background-color: var(--secondaryColor);
+  border-radius: 2rem;
+}
+.experience .details .title {
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
+}
+.experience .details .symbol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1rem;
+}
+.experience .details .symbol .circle {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--highlightColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.experience .details .symbol .circle .icon {
+  color: var(--iconColor);
+  font-size: 2rem;
+}
+.experience .details .symbol .line {
+  width: 0.2rem;
+  height: calc(100% - 3rem);
+  background-color: var(--secondaryColor);
+  border-radius: 1rem;
+}
+.experience .details span {
+  color: var(--highlightColor);
+}
+@media screen and (max-width: 1300px) {
+  .experience .details {
+    height: 100%;
+  }
 }

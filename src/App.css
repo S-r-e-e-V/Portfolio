@@ -1,11 +1,31 @@
 :root {
   --primaryColor: #000000;
   --secondaryColor: #333333;
-  --highlightColor: #d9ff00;
+  --highlightColor: #93ad00;
   --defaultBtnColor: #494949;
   --fontColor: #ffffff;
+  --iconColor: #131313;
 }
 body {
   background-color: var(--primaryColor);
   color: var(--fontColor);
+  font-size: 1.3rem;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background: var(--secondaryColor);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--highlightColor);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--fontColor);
 }

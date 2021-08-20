@@ -1,0 +1,41 @@
+.publications .details {
+  height: calc(100vh - 4.2rem);
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr)); */
+  justify-items: center;
+  align-items: center;
+}
+.publications .details > div {
+  cursor: pointer;
+  width: 25rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondaryColor);
+  border-radius: 2rem;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+.publications .details > div > div {
+  padding: 0.5rem 0rem;
+}
+.publications .details .title {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.publications .details .date {
+  font-size: 0.8rem;
+  width: 10rem;
+  padding: 0.3rem;
+  text-align: center;
+  background-color: var(--primaryColor);
+  border-radius: 2rem;
+}
+.publications .details .title {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.publications .details .content {
+  text-align: justify;
+}
