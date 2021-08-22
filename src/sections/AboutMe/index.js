@@ -5,6 +5,7 @@ import Profile from "../../constants/Portfolio";
 import Heading from "../../components/Heading";
 
 export default function AboutMe() {
+  console.log(process.env.PUBLIC_URL);
   return (
     <div className="aboutme">
       <Heading
@@ -37,7 +38,10 @@ export default function AboutMe() {
               {Profile.languageSkills.otherLanguages.join(",")}
             </span>
           </div>
-          <a href="/src/constants/Sreekanth V_CV.pdf" download>
+          <a
+            href={process.env.PUBLIC_URL + "/CV.pdf"}
+            download="Sreekanth V_CV"
+          >
             Download CV
           </a>
         </div>
