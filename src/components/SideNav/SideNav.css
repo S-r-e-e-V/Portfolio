@@ -1,6 +1,5 @@
 .sidenav {
   z-index: 3;
-  padding: auto;
   padding-top: 2rem;
   background-color: var(--secondaryColor);
   display: flex;
