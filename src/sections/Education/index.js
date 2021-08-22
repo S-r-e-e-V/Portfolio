@@ -29,7 +29,9 @@ export default function Education() {
                 {item.start} {item.end ? `- ${item.end}` : ""}
               </div>
               <div className="title">{item.title}</div>
-              <div>{item.from}</div>
+              <div>
+                Institution : <span>{item.from}</span>
+              </div>
               <div>
                 Location : <span>{item.location}</span>
               </div>

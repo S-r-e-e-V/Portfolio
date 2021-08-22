@@ -7,6 +7,7 @@
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
+  overflow-y: scroll;
 }
 .sidenav .menu-icon {
   display: none;
@@ -14,10 +15,11 @@
 .sidenav .profile-pic {
   width: 150px;
   height: 150px;
+  min-height: 150px;
   border-radius: 50%;
   border: solid var(--highlightColor) 0.2rem;
   overflow: hidden;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .sidenav .profile-pic img {
@@ -29,7 +31,7 @@
   margin-bottom: 0.2rem;
 }
 .sidenav .section-btns {
-  margin-top: 2rem;
+  margin-top: 1rem;
   text-align: center;
 }
 .sidenav .section-btns > a {
@@ -39,14 +41,35 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0.4rem 0rem;
+  margin: 0.6rem 0rem;
   background-color: var(--defaultBtnColor);
-  padding: 0.3rem 4rem;
+  padding: 0.5rem 4rem;
   border-radius: 3rem;
 }
 .sidenav .section-btns > a:hover {
-  background-color: var(--highlightColor);
-  color: var(--primaryColor);
+  color: var(--fontColor);
+  background-color: var(--gradientColor1);
+  background-image: linear-gradient(
+    315deg,
+    var(--gradientColor1) 0%,
+    var(--gradientColor2) 74%
+  );
+  background-size: 400% 400%;
+  -webkit-animation: gradient 5s ease infinite;
+  -moz-animation: gradient 5s ease infinite;
+  animation: gradient 5s ease infinite;
+}
+.sidenav .social-login {
+  display: flex;
+  margin-top: 0.5rem;
+}
+.sidenav .social-login img {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.sidenav .social-login > :first-child {
+  margin-right: 1rem;
 }
 .dim-background {
   display: none;
@@ -64,7 +87,7 @@
 .dim-background.active {
   display: block;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .sidenav {
     width: 20rem;
     position: fixed;

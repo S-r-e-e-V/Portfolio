@@ -6,7 +6,7 @@
 }
 .education .details > div {
   display: flex;
-  width: 25rem;
+  width: 30rem;
   height: 15rem;
   padding: 4rem 0rem;
 }
@@ -49,4 +49,13 @@
 }
 .education .details span {
   color: var(--highlightColor);
+}
+@media screen and (max-width: 1350px) {
+  .education .details {
+    height: 100%;
+    grid-template-columns: unset;
+  }
+  .education .details > div {
+    width: 100%;
+  }
 }

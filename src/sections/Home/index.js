@@ -11,7 +11,9 @@ export default function Home() {
         I'M <span className="name">{Profile.profileInfo.name}</span>
       </div>
       <div className="about-me">{Profile.profileInfo.aboutMe}</div>
-      <div className="about-me-btn">About me</div>
+      <a href="#about" className="about-me-btn">
+        About me
+      </a>
     </div>
   );
 }

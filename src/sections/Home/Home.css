@@ -15,16 +15,29 @@
 }
 .home .about-me {
   margin-bottom: 2rem;
+  text-align: justify;
 }
 .home .about-me-btn {
+  text-decoration: none;
+  color: var(--fontColor);
   cursor: pointer;
   background-color: var(--defaultBtnColor);
   width: 10rem;
   text-align: center;
   padding: 0.2rem 0.5rem;
   border-radius: 3rem;
+  box-shadow: inset 1rem 1rem 2rem #2b2b2b, inset -1rem -1rem 2rem #3b3b3b;
 }
 .home .about-me-btn:hover {
-  background-color: var(--highlightColor);
-  color: var(--primaryColor);
+  background-color: var(--gradientColor1);
+  background-image: linear-gradient(
+    315deg,
+    var(--gradientColor1) 0%,
+    var(--gradientColor2) 74%
+  );
+  background-size: 400% 400%;
+  -webkit-animation: gradient 5s ease infinite;
+  -moz-animation: gradient 5s ease infinite;
+  animation: gradient 5s ease infinite;
+  box-shadow: unset;
 }

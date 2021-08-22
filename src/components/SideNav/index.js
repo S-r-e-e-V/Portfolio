@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect, forwardRef } from "react";
 import "./SideNav.css";
 
+import Profile from "../../constants/Portfolio";
+
 import Images from "../../assets";
 import { BiMenu } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -56,6 +58,18 @@ const SideNav = () => {
         ) : (
           <BiMenu className="menu-icon" onClick={() => setisOpen(!isOpen)} />
         )}
+        <div className="social-login">
+          <img
+            src={Images.insta}
+            onClick={() => window.open(Profile.profileInfo.instagram)}
+          />
+          {/* <img src={Images.fb}/> */}
+          {/* <img src={Images.twitter}/> */}
+          <img
+            src={Images.linkedIn}
+            onClick={() => window.open(Profile.profileInfo.linkedIn)}
+          />
+        </div>
       </div>
       <div className={`dim-background ${isOpen ? "active" : "hide"}`}></div>
     </>

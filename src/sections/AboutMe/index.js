@@ -37,20 +37,20 @@ export default function AboutMe() {
               {Profile.languageSkills.otherLanguages.join(",")}
             </span>
           </div>
-          {/* <a href="/src/constants/Sreekanth V_CV.pdf" download>
+          <a href="/src/constants/Sreekanth V_CV.pdf" download>
             Download CV
-          </a> */}
+          </a>
         </div>
         <div className="section2">
           <div className="boxes">
-            <div className="projects">
-              <span className="content">{Profile.projects.length}</span>{" "}
+            <a href="#project" className="projects">
+              <span className="content">{Profile.projects.length}</span>
               Projects Completed
-            </div>
-            <div className="awards">
+            </a>
+            <a href="#award" className="awards">
               <span className="content">{Profile.awards.length}</span>
               {Profile.awards.length > 1 ? " Awards Won" : " Award Won"}
-            </div>
+            </a>
           </div>
         </div>
       </div>

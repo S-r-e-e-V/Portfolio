@@ -6,7 +6,7 @@
 }
 .experience .details > div {
   display: flex;
-  width: 25rem;
+  width: 30rem;
   padding: 4rem 0rem;
 }
 .experience .details .date {
@@ -49,8 +49,12 @@
 .experience .details span {
   color: var(--highlightColor);
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1350px) {
   .experience .details {
     height: 100%;
+    grid-template-columns: unset;
+  }
+  .experience .details > div {
+    width: 100%;
   }
 }
