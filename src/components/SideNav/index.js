@@ -6,6 +6,7 @@ import Profile from "../../constants/Portfolio";
 import Images from "../../assets";
 import { BiMenu } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
+import { BsMoon } from "react-icons/bs";
 
 import { Link, animateScroll as scroll } from "react-scroll";
 
@@ -33,9 +34,27 @@ const SideNav = () => {
       return;
     }
   };
+  // dark mode 🌗
+  const darkMode = () => {
+    if (localStorage.getItem("theme")) {
+      if (localStorage.getItem("theme") === "dark-theme") {
+        localStorage.setItem("theme", "light-theme");
+        document.documentElement.className = "light-theme";
+      } else if (localStorage.getItem("theme") === "light-theme") {
+        localStorage.setItem("theme", "dark-theme");
+        document.documentElement.className = "dark-theme";
+      }
+    } else {
+      localStorage.setItem("theme", "dark-theme");
+      document.documentElement.className = "dark-theme";
+    }
+    // document.body.classList.toggle("dark-theme");
+  };
+
   return (
     <>
       <div className={`sidenav ${isOpen ? "active" : "hide"}`} ref={node}>
+        <BsMoon className="dark-mode" onClick={darkMode} />
         <div className="profile-pic">
           <img src={Images.profilePic} />
         </div>

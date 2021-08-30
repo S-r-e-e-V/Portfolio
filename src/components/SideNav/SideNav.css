@@ -1,6 +1,6 @@
 .sidenav {
   z-index: 3;
-  padding-top: 2rem;
+  padding-top: 0.5rem;
   background-color: var(--secondaryColor);
   display: flex;
   flex-direction: column;
@@ -10,6 +10,12 @@
 }
 .sidenav .menu-icon {
   display: none;
+  color: var(--fontColor);
+  padding-bottom: 1rem;
+}
+.sidenav .dark-mode {
+  cursor: pointer;
+  align-self: flex-end;
 }
 .sidenav .profile-pic {
   width: 150px;
@@ -40,10 +46,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0.6rem 0rem;
+  margin: 1.5rem 0rem;
   background-color: var(--defaultBtnColor);
   padding: 0.5rem 4rem;
   border-radius: 3rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem var(--primaryColor),
+    -0.1rem -0.1rem 0.3rem var(--highlightTransparentColor);
 }
 .sidenav .section-btns > a:hover {
   color: var(--fontColor);
