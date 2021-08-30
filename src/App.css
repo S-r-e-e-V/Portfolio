@@ -1,16 +1,56 @@
 :root {
+  --primaryColor: #ffffff;
+  --primaryBackgroundColor: #dddddd;
+  --secondaryColor: #cccccc;
+  --highlightColor: #057dcd;
+  --highlightTransparentColor: #057dcd49;
+  --defaultBtnColor: #b6b6b6;
+  --fontColor: #000000;
+  --iconColor: #ececec;
+  --gradientColor1: #d5d58d;
+  --gradientColor2: #ffbe7e;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primaryColor: #000000;
+    --primaryBackgroundColor: #222222;
+    --secondaryColor: #333333;
+    --highlightColor: #88ca5e;
+    --highlightTransparentColor: #87ca5e49;
+    --defaultBtnColor: #494949;
+    --fontColor: #ffffff;
+    --iconColor: #131313;
+    --gradientColor1: #2a2a72;
+    --gradientColor2: #004181;
+  }
+}
+.light-theme {
+  --primaryColor: #ffffff;
+  --primaryBackgroundColor: #dddddd;
+  --secondaryColor: #cccccc;
+  --highlightColor: #057dcd;
+  --highlightTransparentColor: #057dcd49;
+  --defaultBtnColor: #b6b6b6;
+  --fontColor: #000000;
+  --iconColor: #ececec;
+  --gradientColor1: #d5d58d;
+  --gradientColor2: #ffbe7e;
+}
+.dark-theme {
   --primaryColor: #000000;
+  --primaryBackgroundColor: #222222;
   --secondaryColor: #333333;
-  /* --highlightColor: #057dcd; */
   --highlightColor: #88ca5e;
+  --highlightTransparentColor: #87ca5e49;
   --defaultBtnColor: #494949;
   --fontColor: #ffffff;
   --iconColor: #131313;
   --gradientColor1: #2a2a72;
   --gradientColor2: #004181;
 }
+
 body {
-  background-color: var(--primaryColor);
+  background-color: var(--primaryBackgroundColor);
   color: var(--fontColor);
   font-size: 1.3rem;
   scroll-behavior: smooth;

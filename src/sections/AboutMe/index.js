@@ -5,6 +5,7 @@ import Profile from "../../constants/Portfolio";
 import Heading from "../../components/Heading";
 
 export default function AboutMe() {
+  console.log(process.env.PUBLIC_URL);
   return (
     <div className="aboutme">
       <Heading
