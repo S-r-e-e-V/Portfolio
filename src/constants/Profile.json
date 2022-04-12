@@ -7,15 +7,23 @@
     "instagram": "https://www.instagram.com/sreekanth__v/",
     "twitter": "https://twitter.com/sreekanth_v_",
     "facebook": "https://www.facebook.com/profile.php?id=100012313362421",
-    "aboutMe": "Recent Computer Science undergraduate working as a Software Developer with full-stack development expertise, and continuing to obtain a master's degree at a renowned university that provides me opportunities to express my ideas and expand my knowledge. I wish to be a part of a dynamic team that is dedicated to the institution's success."
+    "aboutMe": "Passionate individual looking forward to work as a part-time Software developer where I can apply my technical skills in coding and software design to generate high-end solutions to general software issues along with drawing a better user experience."
   },
   "workExperience": [
+    {
+      "designation": "Software Engineer",
+      "company": "QBurst Technologies",
+      "location": "Kochi, India",
+      "start": "10/11/2021",
+      "end": "Current",
+      "details": "Full-stack developer experienced in Node.js and React.js"
+    },
     {
       "designation": "Software developer",
       "company": "Riafy Technologies",
       "location": "Kochi, India",
       "start": "27/05/2020",
-      "end": "Current",
+      "end": "08/11/2021",
       "details": "Full-stack developer experienced in Node.js and React.js"
     },
     {
