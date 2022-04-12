@@ -11,11 +11,19 @@
   },
   "workExperience": [
     {
+      "designation": "Software Engineer",
+      "company": "QBurst Technologies",
+      "location": "Kochi, India",
+      "start": "10/11/2021",
+      "end": "Current",
+      "details": "Full-stack developer experienced in Node.js and React.js"
+    },
+    {
       "designation": "Software developer",
       "company": "Riafy Technologies",
       "location": "Kochi, India",
       "start": "27/05/2020",
-      "end": "Current",
+      "end": "08/11/2021",
       "details": "Full-stack developer experienced in Node.js and React.js"
     },
     {
