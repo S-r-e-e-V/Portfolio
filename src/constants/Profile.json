@@ -15,7 +15,7 @@
       "company": "QBurst Technologies",
       "location": "Kochi, India",
       "start": "10/11/2021",
-      "end": "Current",
+      "end": "31/07/2022",
       "details": "Full-stack developer experienced in Node.js and React.js"
     },
     {
@@ -24,7 +24,7 @@
       "location": "Kochi, India",
       "start": "27/05/2020",
       "end": "08/11/2021",
-      "details": "Full-stack developer experienced in Node.js and React.js"
+      "details": "Full-stack developer experienced in HTML, CSS, Javascript, Node.js, React.js"
     },
     {
       "designation": "Internship",
@@ -44,6 +44,13 @@
     }
   ],
   "education": [
+    {
+      "title": "Master of Applied Computing specialisation in Artificial Intelligence",
+      "from": "University of Windsor",
+      "location": "Windsor, ontario, Canada",
+      "start": "01/09/2022",
+      "end": "current"
+    },
     {
       "title": "Bachelor of Technology(Honours) in Computer Science and Engineering",
       "from": "A P J Abdul Kalam Technological University",
