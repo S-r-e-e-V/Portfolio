@@ -16,7 +16,12 @@ export default function Projects() {
       />
       <div className="details">
         {Profile.projects.map((item, index) => (
-          <div key={index}>
+          <div
+            key={index}
+            onClick={() => {
+              if (item.link) window.open(item.link, "_blank");
+            }}
+          >
             <div className="date">{item.date}</div>
             <div className="title">{item.title}</div>
             <div className="content">{item.details}</div>

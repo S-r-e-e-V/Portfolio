@@ -115,12 +115,14 @@
     {
       "title": "TicTacToe puzzle Game Android App",
       "details": "Tic-tac-toe is a game for 2 players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner. Features include Single player (play with android) with two difficulty levels and Multiplayer.",
-      "date": "2020"
+      "date": "2020",
+      "link":"https://play.google.com/store/apps/details?id=com.puzzlegame.tictactoe"
     },
     {
       "title": "Speech Text Converter Android App",
       "details": "An android app for voice to text and text to voice conversion. Build-in TTS engine for text to speech conversion and androids built-in speech recogniser to convert speech into text.",
-      "date": "2020"
+      "date": "2020",
+      "link":"https://play.google.com/store/apps/details?id=com.speech.voice_text"
     },
     {
       "title": "Life Source - Blood Bank Management System",

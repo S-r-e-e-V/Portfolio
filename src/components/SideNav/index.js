@@ -72,8 +72,8 @@ const SideNav = () => {
           <a href="#experience">Work Experience</a>
           <a href="#education">Education</a>
           <a href="#project">Projects</a>
-          <a href="#publication">Publications</a>
           <a href="#award">Awards</a>
+          <a href="#publication">Publications</a>
         </div>
         {isOpen ? (
           <AiOutlineClose
