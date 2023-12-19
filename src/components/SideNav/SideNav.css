@@ -39,21 +39,21 @@
   margin-top: 1rem;
   text-align: center;
 }
-.sidenav .section-btns > a {
+.sidenav .section-btns > span {
   text-decoration: none;
   color: var(--fontColor);
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1.5rem 0rem;
+  margin: 1.2rem 0rem;
   background-color: var(--defaultBtnColor);
   padding: 0.5rem 4rem;
   border-radius: 3rem;
   box-shadow: 0.2rem 0.2rem 0.5rem var(--primaryColor),
     -0.1rem -0.1rem 0.3rem var(--highlightTransparentColor);
 }
-.sidenav .section-btns > a:hover {
+.sidenav .section-btns > span:hover {
   color: var(--fontColor);
   background-color: var(--gradientColor1);
   background-image: linear-gradient(

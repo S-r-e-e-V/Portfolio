@@ -3,9 +3,10 @@ import "./AboutMe.css";
 
 import Profile from "../../constants/Portfolio";
 import Heading from "../../components/Heading";
+import { useNavigate } from "react-router-dom";
 
 export default function AboutMe() {
-  console.log(process.env.PUBLIC_URL);
+  const navigator = useNavigate();
   return (
     <div className="aboutme">
       <Heading
@@ -38,23 +39,20 @@ export default function AboutMe() {
               {Profile.languageSkills.otherLanguages.join(",")}
             </span>
           </div>
-          <a
-            href={process.env.PUBLIC_URL + "/CV.pdf"}
-            download="Sreekanth V_CV"
-          >
+          <a href={process.env.PUBLIC_URL + "CV.pdf"} download="CV">
             Download CV
           </a>
         </div>
         <div className="section2">
           <div className="boxes">
-            <a href="#project" className="projects">
+            <span onClick={() => navigator("/projects")} className="projects">
               <span className="content">{Profile.projects.length}</span>
               Projects Completed
-            </a>
-            <a href="#award" className="awards">
+            </span>
+            <span onClick={() => navigator("/awards")} className="awards">
               <span className="content">{Profile.awards.length}</span>
               {Profile.awards.length > 1 ? " Awards Won" : " Award Won"}
-            </a>
+            </span>
           </div>
         </div>
       </div>

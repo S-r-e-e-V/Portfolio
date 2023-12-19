@@ -1,11 +1,10 @@
-.landing-page {
+/* .landing-page {
   display: grid;
   grid-template-columns: 20rem auto;
   overflow: hidden;
   height: 100vh;
 }
 .landing-page .sections {
-  /* height: 100vh; */
   overflow-y: auto;
   padding: 10px;
 }
@@ -18,4 +17,15 @@
   .landing-page .sections {
     padding: 5px;
   }
+} */
+.main {
+  display: grid;
+  grid-template-columns: 20rem auto;
+  overflow: hidden;
+  height: 100vh;
+}
+.main .landing-section {
+  overflow-y: auto;
+  /* padding: 10px; */
+  box-sizing: border-box;
 }

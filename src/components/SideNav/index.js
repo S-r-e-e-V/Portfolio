@@ -8,9 +8,11 @@ import { BiMenu } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import { BsMoon } from "react-icons/bs";
 import { MdWbSunny } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 const SideNav = () => {
   const node = useRef();
+  const navigator = useNavigate();
   const [isOpen, setisOpen] = useState(false);
   const [darkTheme, setdarkTheme] = useState(true);
   useEffect(() => {
@@ -67,13 +69,13 @@ const SideNav = () => {
         <div className="name">Sreekanth V</div>
         <div className="designation">Software Developer</div>
         <div className="section-btns">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#experience">Work Experience</a>
-          <a href="#education">Education</a>
-          <a href="#project">Projects</a>
-          <a href="#publication">Publications</a>
-          <a href="#award">Awards</a>
+          <span onClick={() => navigator("/home")}>Home</span>
+          <span onClick={() => navigator("/about")}>About</span>
+          <span onClick={() => navigator("/experience")}>Work Experience</span>
+          <span onClick={() => navigator("/education")}>Education</span>
+          <span onClick={() => navigator("/projects")}>Projects</span>
+          <span onClick={() => navigator("/publications")}>Publications</span>
+          <span onClick={() => navigator("/awards")}>Awards</span>
         </div>
         {isOpen ? (
           <AiOutlineClose

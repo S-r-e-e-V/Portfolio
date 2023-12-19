@@ -1,21 +1,29 @@
 {
   "profileInfo": {
-    "name": "Sreekanth V",
+    "name": "Sreekanth Vinodkumar",
     "dob": "25/05/1998",
     "nationality": "Indian",
     "linkedIn": "https://www.linkedin.com/in/sreekanth-v-9b0109142/",
     "instagram": "https://www.instagram.com/sreekanth__v/",
     "twitter": "https://twitter.com/sreekanth_v_",
     "facebook": "https://www.facebook.com/profile.php?id=100012313362421",
-    "aboutMe": "Passionate individual looking forward to work as contract based/ part-time/ full-time Software developer where I can apply my technical skills in coding and software design to generate high-end solutions to general software issues along with drawing a better user experience."
+    "aboutMe": "Passionate individual looking forward to work as full-time Software Engineer where I can apply my technical skills in coding and software design to generate high-end solutions to general software issues along with drawing a better user experience."
   },
   "workExperience": [
     {
       "designation": "Software Engineer",
+      "company": "University of Windsor",
+      "location": "Windsor, ontario, Canada",
+      "start": "05/2023",
+      "end": "current",
+      "details": "Full-stack developer experienced in Node.js and React.js"
+    },
+    {
+      "designation": "Software Engineer",
       "company": "QBurst Technologies",
       "location": "Kochi, India",
-      "start": "10/11/2021",
-      "end": "31/07/2022",
+      "start": "5/2021",
+      "end": "7/2022",
       "details": "Full-stack developer experienced in Node.js and React.js"
     },
     {
@@ -49,7 +57,7 @@
       "from": "University of Windsor",
       "location": "Windsor, ontario, Canada",
       "start": "01/09/2022",
-      "end": "current"
+      "end": "31/12/2023"
     },
     {
       "title": "Bachelor of Technology(Honours) in Computer Science and Engineering",
@@ -107,6 +115,12 @@
   ],
 
   "projects": [
+    {
+      "title": "Heyrides",
+      "details": "Accomplished the development of Heyrides, a comprehensive ride-sharing application facilitating seamless commuting between diverse locations. Successfully integrated an intuitive user interface, featuring user-specific pages and an efficient admin dashboard. Users can effortlessly book rides from one location to another, with the added convenience of receiving notifications via email.",
+      "date": "2023",
+      "link": "https://www.heyrides.ca"
+    },
     {
       "title": "Working model of Self-driving Vehicle",
       "details": "A self-driving vehicle embedded with a convolutional neural network and shortest path algorithm for predicting the best path and direction which enables safe travel from one location to another.",

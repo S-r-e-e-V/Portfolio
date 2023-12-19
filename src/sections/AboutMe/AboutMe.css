@@ -32,7 +32,7 @@
   gap: 1rem;
   justify-content: space-around;
 }
-.aboutme .details .boxes > a {
+.aboutme .details .boxes > span {
   color: var(--fontColor);
   text-decoration: none;
   cursor: pointer;
@@ -48,8 +48,8 @@
   box-shadow: 0.2rem 0.2rem 0.5rem var(--primaryColor),
     -0.1rem -0.1rem 0.3rem var(--highlightTransparentColor);
 }
-.aboutme .details .boxes > a:hover,
-.aboutme .details .section1 a:hover {
+.aboutme .details .boxes > span:hover,
+.aboutme .details .section1 span:hover {
   background-color: var(--gradientColor1);
   background-image: linear-gradient(
     315deg,
@@ -63,13 +63,13 @@
   box-shadow: 0.2rem 0.2rem 0.5rem var(--primaryColor),
     -0.1rem -0.1rem 0.3rem var(--highlightTransparentColor);
 }
-.aboutme .details .section1 a:hover {
+.aboutme .details .section1 span:hover {
   box-shadow: unset;
 }
-.aboutme .details .boxes > a:hover .content {
+.aboutme .details .boxes > span:hover .content {
   color: var(--fontColor);
 }
-.aboutme .details .boxes > a .content {
+.aboutme .details .boxes > span .content {
   font-size: 2rem;
 }
 @media screen and (max-width: 1350px) {
@@ -85,7 +85,7 @@
     margin: 1rem 0rem;
     flex-direction: row;
   }
-  .aboutme .details .boxes > a {
+  .aboutme .details .boxes > span {
     min-width: 8rem;
     height: 8rem;
   }

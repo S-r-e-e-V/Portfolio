@@ -10,35 +10,8 @@ import Projects from "../../sections/Projects";
 import Awards from "../../sections/Awards";
 import Publications from "../../sections/Publications";
 
-import { Element, Link, animateScroll as scroll } from "react-scroll";
+import Router from "../../routes/routes";
 
 export default function LandingPage() {
-  return (
-    <div className="landing-page">
-      <SideNav />
-      <div className="sections">
-        <div id="home">
-          <Home />
-        </div>
-        <div id="about">
-          <AboutMe />
-        </div>
-        <div id="experience">
-          <Experience />
-        </div>
-        <div id="education">
-          <Education />
-        </div>
-        <div id="project">
-          <Projects />
-        </div>
-        <div id="award">
-          <Awards />
-        </div>
-        <div id="publication">
-          <Publications />
-        </div>
-      </div>
-    </div>
-  );
+  return <Router />;
 }
