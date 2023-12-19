@@ -85,12 +85,13 @@ const SideNav = () => {
           <span onClick={() => redirect("/awards")}>Awards</span>
         </div>
         {isOpen ? (
-          <AiOutlineClose
-            className="menu-icon"
-            onClick={() => setisOpen(!isOpen)}
-          />
+          <span className="menu-icon">
+            <AiOutlineClose onClick={() => setisOpen(!isOpen)} />
+          </span>
         ) : (
-          <BiMenu className="menu-icon" onClick={() => setisOpen(!isOpen)} />
+          <span className="menu-icon">
+            <BiMenu onClick={() => setisOpen(!isOpen)} />
+          </span>
         )}
         <div className="social-login">
           <img
