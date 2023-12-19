@@ -67,7 +67,7 @@ const SideNav = () => {
           <img src={Images.profilePic} />
         </div>
         <div className="name">Sreekanth V</div>
-        <div className="designation">Software Developer</div>
+        <div className="designation">Software Engineer</div>
         <div className="section-btns">
           <span onClick={() => navigator("/home")}>Home</span>
           <span onClick={() => navigator("/about")}>About</span>
