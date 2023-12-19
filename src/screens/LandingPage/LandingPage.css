@@ -26,6 +26,15 @@
 }
 .main .landing-section {
   overflow-y: auto;
-  /* padding: 10px; */
-  box-sizing: border-box;
+  padding: 0 10px;
+}
+@media screen and (max-width: 800px) {
+  .main {
+    grid-template-columns: unset;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main .landing-section {
+    padding: 5px;
+  }
 }

@@ -54,14 +54,21 @@ const SideNav = () => {
       setdarkTheme(false);
     }
   };
-  console.log(localStorage.getItem("theme"));
+  const redirect = (url) => {
+    navigator(url);
+    setisOpen(!isOpen);
+  };
   return (
     <>
       <div className={`sidenav ${isOpen ? "active" : "hide"}`} ref={node}>
         {darkTheme ? (
-          <MdWbSunny className="dark-mode" onClick={darkMode} />
+          <span className="dark-mode">
+            <MdWbSunny onClick={darkMode} />
+          </span>
         ) : (
-          <BsMoon className="dark-mode" onClick={darkMode} />
+          <span className="dark-mode">
+            <BsMoon onClick={darkMode} />
+          </span>
         )}
         <div className="profile-pic">
           <img src={Images.profilePic} />
@@ -69,13 +76,13 @@ const SideNav = () => {
         <div className="name">Sreekanth V</div>
         <div className="designation">Software Engineer</div>
         <div className="section-btns">
-          <span onClick={() => navigator("/home")}>Home</span>
-          <span onClick={() => navigator("/about")}>About</span>
-          <span onClick={() => navigator("/experience")}>Work Experience</span>
-          <span onClick={() => navigator("/education")}>Education</span>
-          <span onClick={() => navigator("/projects")}>Projects</span>
-          <span onClick={() => navigator("/publications")}>Publications</span>
-          <span onClick={() => navigator("/awards")}>Awards</span>
+          <span onClick={() => redirect("/home")}>Home</span>
+          <span onClick={() => redirect("/about")}>About</span>
+          <span onClick={() => redirect("/experience")}>Work Experience</span>
+          <span onClick={() => redirect("/education")}>Education</span>
+          <span onClick={() => redirect("/projects")}>Projects</span>
+          <span onClick={() => redirect("/publications")}>Publications</span>
+          <span onClick={() => redirect("/awards")}>Awards</span>
         </div>
         {isOpen ? (
           <AiOutlineClose

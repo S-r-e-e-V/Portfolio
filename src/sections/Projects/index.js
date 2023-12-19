@@ -5,6 +5,9 @@ import Heading from "../../components/Heading";
 
 import Profile from "../../constants/Portfolio";
 export default function Projects() {
+  const link = (url) => {
+    window.open(url, "_blank");
+  };
   return (
     <div className="projects">
       <Heading
@@ -16,7 +19,7 @@ export default function Projects() {
       />
       <div className="details">
         {Profile.projects.map((item, index) => (
-          <div key={index}>
+          <div key={index} onClick={() => (item.link ? link(item.link) : "")}>
             <div className="date">{item.date}</div>
             <div className="title">{item.title}</div>
             <div className="content">{item.details}</div>

@@ -19,7 +19,7 @@ function Router() {
         <div className="landing-section">
           <Routes>
             <Route exact path="/awards" element={<Awards />} />
-            <Route exact path="/publication" element={<Publications />} />
+            <Route exact path="/publications" element={<Publications />} />
             <Route exact path="/projects" element={<Projects />} />
             <Route exact path="/education" element={<Education />} />
             <Route exact path="/experience" element={<Experience />} />
