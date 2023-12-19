@@ -32,13 +32,13 @@ export default function AboutMe() {
             </span>
           </div>
 
-          <div className="languages">
+          {/* <div className="languages">
             Languages :{" "}
             <span className="content">
               {Profile.languageSkills.motherTongue} (Mother Tongue),
               {Profile.languageSkills.otherLanguages.join(",")}
             </span>
-          </div>
+          </div> */}
           <a href={process.env.PUBLIC_URL + "CV.pdf"} download="CV">
             Download CV
           </a>
