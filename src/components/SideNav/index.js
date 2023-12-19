@@ -56,7 +56,7 @@ const SideNav = () => {
   };
   const redirect = (url) => {
     navigator(url);
-    setisOpen(!isOpen);
+    setisOpen(false);
   };
   return (
     <>
