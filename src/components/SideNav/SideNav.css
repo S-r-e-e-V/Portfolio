@@ -25,6 +25,13 @@
   border: solid var(--highlightColor) 0.2rem;
   overflow: hidden;
   margin-bottom: 1rem;
+  transition: transform 0.3s ease-in-out, box-shadow 0.5s ease-in-out; /* Add transition for smooth animation */
+}
+
+.sidenav .profile-pic:hover {
+  transform: scale(1.05); /* Scale up the image when hovering */
+  box-shadow: 0 0 2px var(--highlightColor), 0 0 4px var(--highlightColor),
+    0 0 6px var(--highlightColor); /* Add glowing effect to the border */
 }
 
 .sidenav .profile-pic img {
