@@ -5,7 +5,8 @@ import React from "react";
 import Heading from "../../components/Heading";
 import Profile from "../../constants/Portfolio";
 
-import ReactTooltip from "react-tooltip";
+import { Tooltip } from "react-tooltip";
+
 export default function Publications() {
   const link = (url) => {
     window.open(url, "_blank");
@@ -24,9 +25,8 @@ export default function Publications() {
           <div
             key={index}
             onClick={() => link(item.link)}
-            data-tip="Click to view published paper"
-            data-for="toolTip1"
-            data-place="right"
+            data-tooltip-content="Click to view published paper"
+            data-tooltip-id="toolTip1"
           >
             <div className="date">{item.date}</div>
             <div className="title">{item.title}</div>
@@ -34,7 +34,7 @@ export default function Publications() {
           </div>
         ))}
       </div>
-      <ReactTooltip id="toolTip1" />
+      <Tooltip id="toolTip1" />
     </div>
   );
 }
