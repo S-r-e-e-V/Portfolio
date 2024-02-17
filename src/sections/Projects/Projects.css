@@ -1,5 +1,4 @@
 .projects .details {
-  height: calc(100vh - 4.2rem);
   margin: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));

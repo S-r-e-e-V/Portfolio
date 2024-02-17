@@ -1,0 +1,91 @@
+/* TopNav.css */
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--primaryBackgroundColor);
+  width: 100%;
+  box-sizing: border-box;
+
+  transition: all 0.5s ease;
+}
+
+.top-nav.scrolled {
+  position: fixed;
+  background-color: var(--secondaryColor);
+  box-shadow: 0.2rem 0.2rem 0.5rem var(--primaryColor),
+    -0.1rem -0.1rem 0.3rem var(--highlightTransparentColor);
+}
+
+/* profile pics */
+.top-nav .profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid transparent 0.2rem;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.5s ease-in-out,
+    border-color 0.5s ease-in-out;
+}
+
+.top-nav .profile-pic:hover {
+  transform: scale(1.1);
+  border-color: var(--highlightColor);
+  color: var(--primaryColor);
+}
+
+/* titles */
+.top-nav .title-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.top-nav .title-section span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  position: relative; /* Ensure proper positioning of pseudo-element */
+}
+
+.top-nav .title-section span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--highlightColor);
+  transition: width 0.3s ease-in-out; /* Transition the width for the underline effect */
+}
+
+.top-nav .title-section span:hover::after {
+  width: 100%; /* Expand the width of the underline on hover */
+}
+
+/* icons */
+.top-nav .icons-section {
+  display: flex;
+  gap: 10px;
+}
+.top-nav .icons-section span {
+  cursor: pointer;
+  margin: auto;
+}
+.top-nav .icons-section .social-media-icon.instagram:hover {
+  color: var(--instagram);
+}
+.top-nav .icons-section .social-media-icon.linkedin:hover {
+  color: var(--linkedIn);
+}
+
+@media screen and (max-width: 850px) {
+  .top-nav {
+    display: none;
+  }
+}

@@ -12,7 +12,7 @@ export default function Publications() {
     window.open(url, "_blank");
   };
   return (
-    <div className="publications">
+    <div className="publications" id="publications">
       <Heading
         heading={
           <div>

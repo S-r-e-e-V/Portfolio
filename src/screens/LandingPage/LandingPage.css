@@ -19,19 +19,11 @@
   }
 } */
 .main {
-  display: grid;
-  grid-template-columns: 20rem auto;
   overflow: hidden;
-  height: 100vh;
 }
 .main .landing-section {
   overflow-y: auto;
   padding: 0 10px;
-}
-@media screen and (max-width: 800px) {
-  .main {
-    grid-template-columns: unset;
-  }
 }
 @media screen and (max-width: 500px) {
   .main .landing-section {

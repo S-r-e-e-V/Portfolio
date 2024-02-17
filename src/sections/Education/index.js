@@ -7,7 +7,7 @@ import Profile from "../../constants/Portfolio";
 import { FaGraduationCap } from "react-icons/fa";
 export default function Education() {
   return (
-    <div className="education">
+    <div className="education" id="education">
       <Heading
         heading={
           <div>

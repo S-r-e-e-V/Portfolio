@@ -1,18 +1,18 @@
-import React, { useState, useRef, useEffect, forwardRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./SideNav.css";
 
-import Profile from "../../constants/Portfolio";
-
-import Images from "../../assets";
+import Profile from "../../../constants/Portfolio";
+import Images from "../../../assets";
 import { BiMenu } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import { BsMoon } from "react-icons/bs";
 import { MdWbSunny } from "react-icons/md";
-import { useNavigate } from "react-router-dom";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
 
 const SideNav = () => {
   const node = useRef();
-  const navigator = useNavigate();
+  // const navigator = useNavigate();
   const [isOpen, setisOpen] = useState(false);
   const [darkTheme, setdarkTheme] = useState(true);
   useEffect(() => {
@@ -55,7 +55,15 @@ const SideNav = () => {
     }
   };
   const redirect = (url) => {
-    navigator(url);
+    const section = document.getElementById(url);
+    const headerHeight = document.querySelector(".top-nav").offsetHeight; // Get the height of the fixed header
+    if (section) {
+      const topPosition = section.offsetTop - headerHeight; // Adjust scroll position by subtracting header height
+      window.scrollTo({
+        top: topPosition,
+        behavior: "smooth",
+      });
+    }
     setisOpen(false);
   };
   return (
@@ -63,11 +71,11 @@ const SideNav = () => {
       <div className={`sidenav ${isOpen ? "active" : "hide"}`} ref={node}>
         {darkTheme ? (
           <span className="dark-mode">
-            <MdWbSunny onClick={darkMode} />
+            <MdWbSunny size={20} onClick={darkMode} />
           </span>
         ) : (
           <span className="dark-mode">
-            <BsMoon onClick={darkMode} />
+            <BsMoon size={20} onClick={darkMode} />
           </span>
         )}
         <div className="profile-pic">
@@ -78,7 +86,7 @@ const SideNav = () => {
         <div className="section-btns">
           <span onClick={() => redirect("/home")}>Home</span>
           <span onClick={() => redirect("/about")}>About</span>
-          <span onClick={() => redirect("/experience")}>Work Experience</span>
+          <span onClick={() => redirect("/experience")}>Experience</span>
           <span onClick={() => redirect("/education")}>Education</span>
           <span onClick={() => redirect("/projects")}>Projects</span>
           <span onClick={() => redirect("/publications")}>Publications</span>
@@ -86,24 +94,26 @@ const SideNav = () => {
         </div>
         {isOpen ? (
           <span className="menu-icon">
-            <AiOutlineClose onClick={() => setisOpen(!isOpen)} />
+            <AiOutlineClose size={20} onClick={() => setisOpen(!isOpen)} />
           </span>
         ) : (
           <span className="menu-icon">
-            <BiMenu onClick={() => setisOpen(!isOpen)} />
+            <BiMenu size={20} onClick={() => setisOpen(!isOpen)} />
           </span>
         )}
         <div className="social-login">
-          <img
-            src={Images.insta}
-            onClick={() => window.open(Profile.profileInfo.instagram)}
-          />
-          {/* <img src={Images.fb}/> */}
-          {/* <img src={Images.twitter}/> */}
-          <img
-            src={Images.linkedIn}
-            onClick={() => window.open(Profile.profileInfo.linkedIn)}
-          />
+          <span className="social-media-icon instagram">
+            <FaInstagram
+              size={25}
+              onClick={() => window.open(Profile.profileInfo.instagram)}
+            />
+          </span>
+          <span className="social-media-icon linkedin">
+            <FaLinkedinIn
+              size={25}
+              onClick={() => window.open(Profile.profileInfo.linkedIn)}
+            />
+          </span>
         </div>
       </div>
       <div className={`dim-background ${isOpen ? "active" : "hide"}`}></div>

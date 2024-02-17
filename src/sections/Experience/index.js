@@ -7,7 +7,7 @@ import Profile from "../../constants/Portfolio";
 import { MdWork } from "react-icons/md";
 export default function Experience() {
   return (
-    <div className="experience">
+    <div className="experience" id="experience">
       <Heading
         heading={
           <div>

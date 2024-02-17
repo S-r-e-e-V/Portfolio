@@ -6,7 +6,7 @@ import Heading from "../../components/Heading";
 import Profile from "../../constants/Portfolio";
 export default function Awards() {
   return (
-    <div className="awards">
+    <div className="awards" id="awards">
       <Heading
         heading={
           <div>

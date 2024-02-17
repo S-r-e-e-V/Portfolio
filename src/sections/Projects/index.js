@@ -9,7 +9,7 @@ export default function Projects() {
     window.open(url, "_blank");
   };
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <Heading
         heading={
           <div>
