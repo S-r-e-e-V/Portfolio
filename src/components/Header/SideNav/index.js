@@ -64,6 +64,7 @@ const SideNav = () => {
         behavior: "smooth",
       });
     }
+    console.log(section);
     setisOpen(false);
   };
   return (
@@ -83,7 +84,7 @@ const SideNav = () => {
         </div>
         <div className="name">Sreekanth V</div>
         <div className="designation">Software Engineer</div>
-        <div className="section-btns">
+        {/* <div className="section-btns">
           <span onClick={() => redirect("/home")}>Home</span>
           <span onClick={() => redirect("/about")}>About</span>
           <span onClick={() => redirect("/experience")}>Experience</span>
@@ -91,7 +92,7 @@ const SideNav = () => {
           <span onClick={() => redirect("/projects")}>Projects</span>
           <span onClick={() => redirect("/publications")}>Publications</span>
           <span onClick={() => redirect("/awards")}>Awards</span>
-        </div>
+        </div> */}
         {isOpen ? (
           <span className="menu-icon">
             <AiOutlineClose size={20} onClick={() => setisOpen(!isOpen)} />
