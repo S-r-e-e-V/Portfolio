@@ -16,7 +16,7 @@
       "location": "Windsor, ontario, Canada",
       "start": "05/2023",
       "end": "12/2023",
-      "details": "Full-stack developer experienced in Node.js and React.js"
+      "details": "Full-stack developer experienced in HTML, CSS, Node.js, React.js, MongoDB and AWS"
     },
     {
       "designation": "Software Engineer",
@@ -24,7 +24,7 @@
       "location": "Kochi, India",
       "start": "5/2021",
       "end": "7/2022",
-      "details": "Full-stack developer experienced in Node.js and React.js"
+      "details": "Full-stack developer experienced in HTML, CSS, Node.js, React.js, MongoDB, Python and AWS"
     },
     {
       "designation": "Software developer",
@@ -32,7 +32,7 @@
       "location": "Kochi, India",
       "start": "27/05/2020",
       "end": "08/11/2021",
-      "details": "Full-stack developer experienced in HTML, CSS, Javascript, Node.js, React.js"
+      "details": "Full-stack developer experienced in HTML, CSS, Javascript, Node.js, React.js and NLP"
     },
     {
       "designation": "Internship",
@@ -48,7 +48,7 @@
       "location": "Kochi, India",
       "start": "2017",
       "end": "",
-      "details": "Introduction to Web concepts, HTML, CSS, JavaScript, PHP, MySQL"
+      "details": "Introduction to Web concepts, HTML, CSS, JavaScript, PHP and MySQL"
     }
   ],
   "education": [
@@ -119,8 +119,35 @@
     {
       "title": "Heyrides",
       "details": "Accomplished the development of Heyrides, a comprehensive ride-sharing application facilitating seamless commuting between diverse locations. Successfully integrated an intuitive user interface, featuring user-specific pages and an efficient admin dashboard. Users can effortlessly book rides from one location to another, with the added convenience of receiving notifications via email.",
-      "date": "2023",
+      "date": "2024",
       "link": "https://www.heyrides.ca"
+    },
+    {
+      "title": "Impact of People’s Emotion on the Crypto Market",
+      "details": "Conducted an in-depth analysis of a Twitter dataset related to the Russian-Ukraine War, obtained from Kaggle, to gain insights into public sentiments and reactions. Utilized advanced data cleaning techniques to ensure the dataset's accuracy and reliability. Leveraged TextBlob and IBM Watson NLP for sentiment analysis on the tweets, assessing the emotions expressed by users during the conflict. Developed visually compelling data visualizations depicting the variations in cryptocurrency trends in response to people's emotions during this period.",
+      "date": "2023"
+    },
+    {
+      "title": "Mini-terminal",
+      "details": "Designed and implemented robust client-server connections using the TCP protocol. Implemented load balancing techniques to effectively distribute network traffic between primary and secondary servers. Handled client-side requests, processed them on the server side to deliver requested data and files, and implemented secure, scalable solutions to cater to diverse client needs.",
+      "date": "2023",
+      "link": "https://github.com/S-r-e-e-V/C_Socket_Programming"
+    },
+    {
+      "title": "NoSQL Injection detection in MongoDB using Machine Learning",
+      "details": "Conducted research to determine the most effective machine learning methods for detecting injection attacks on MongoDB databases using a NoSQL injection dataset. Compared the performance of various classifiers, including Logistic Regression, Decision Tree, Support Vector Machines, Naive Bayes, Gradient Boosting, and Random Forest, based on F1 Score, Recall, Precision, and Accuracy. Concluded that the Random Forest classifier was the best for NoSQL injection detection in MongoDB.",
+      "date": "2023"
+    },
+    {
+      "title": "Diary Application",
+      "details": "Developed a cutting-edge text editor for a diary application using React.js, integrating visually appealing themes and a dark mode feature to enhance the user experience. Strengthened application security by implementing JWT token authentication to safeguard user data and prevent unauthorized access. Ensured top-level data protection by implementing robust password encryption techniques for secure storage of sensitive information in the database.",
+      "date": "2022",
+      "link": "https://diary-website.netlify.app"
+    },
+    {
+      "title": "Logistic Application",
+      "details": "An application to efficiently manage logistics transportation, ensuring seamless delivery of goods. Featured an integrated Google Maps function for real-time vehicle tracking, comprehensive transaction details reports for enhanced data visibility, and Firebase push notifications for timely updates. Implemented multi-language functionality and right-to-left (RTL) support, improving accessibility for diverse users. Utilized service workers to enable notifications even when the website was inactive, enhancing user engagement and convenience.",
+      "date": "2021"
     },
     {
       "title": "Working model of Self-driving Vehicle",
@@ -130,14 +157,12 @@
     {
       "title": "TicTacToe puzzle Game Android App",
       "details": "Tic-tac-toe is a game for 2 players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner. Features include Single player (play with android) with two difficulty levels and Multiplayer.",
-      "date": "2020",
-      "link": "https://play.google.com/store/apps/details?id=com.puzzlegame.tictactoe"
+      "date": "2020"
     },
     {
       "title": "Speech Text Converter Android App",
-      "details": "An android app for voice to text and text to voice conversion. Build-in TTS engine for text to speech conversion and androids built-in speech recogniser to convert speech into text.",
-      "date": "2020",
-      "link": "https://play.google.com/store/apps/details?id=com.speech.voice_text"
+      "details": "Utilized Android's built-in Text-to-Speech (TTS) engine to deliver seamless and interactive speech capabilities, enhancing user experience and accessibility. Integrated text-to-speech and speech recognition functionalities into various communication channels, including SMS, Email, and cross-application copying, empowering users to effortlessly communicate and interact with the app's content.",
+      "date": "2020"
     },
     {
       "title": "Life Source - Blood Bank Management System",

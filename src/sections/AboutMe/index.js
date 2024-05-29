@@ -45,7 +45,7 @@ export default function AboutMe() {
           <div className="boxes">
             <span className="projects">
               <span className="content">{Profile.projects.length}</span>
-              Projects Completed
+              Completed Projects
             </span>
             <span className="awards">
               <span className="content">{Profile.awards.length}</span>
