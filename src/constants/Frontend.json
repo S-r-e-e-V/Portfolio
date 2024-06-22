@@ -3,16 +3,16 @@
     "name": "Sreekanth Vinodkumar",
     "dob": "25/05/1998",
     "nationality": "Indian",
-    "designation": "Software Engineer",
+    "designation": "Frontend Developer",
     "linkedIn": "https://www.linkedin.com/in/sreekanth-v-9b0109142/",
     "instagram": "https://www.instagram.com/sreekanth__v/",
     "twitter": "https://twitter.com/sreekanth_v_",
     "facebook": "https://www.facebook.com/profile.php?id=100012313362421",
-    "aboutMe": "Passionate individual looking forward to work as full-time Software Engineer where I can apply my technical skills in coding and software design to generate high-end solutions to general software issues along with drawing a better user experience."
+    "aboutMe": "Skilled Frontend Developer with expertise in JavaScript, React JS and React Native, dedicated to building responsive, user-friendly web and mobile applications. Passionate about creating high-quality solutions and enhancing user experience through innovative design and collaboration."
   },
   "workExperience": [
     {
-      "designation": "Software Engineer",
+      "designation": "Full Stack Developer (Research Assistant)",
       "company": "University of Windsor",
       "location": "Windsor, ontario, Canada",
       "start": "05/2023",
@@ -20,20 +20,20 @@
       "details": "Full-stack developer experienced in HTML, CSS, Node.js, React.js, MongoDB and AWS"
     },
     {
-      "designation": "Software Engineer",
+      "designation": "Frontend Developer",
       "company": "QBurst Technologies",
       "location": "Kochi, India",
       "start": "5/2021",
       "end": "7/2022",
-      "details": "Full-stack developer experienced in HTML, CSS, Node.js, React.js, MongoDB, Python and AWS"
+      "details": "Frontend developer experienced in HTML, CSS, Node.js, React.js, MongoDB, Python and AWS"
     },
     {
-      "designation": "Software developer",
+      "designation": "Frontend Developer",
       "company": "Riafy Technologies",
       "location": "Kochi, India",
       "start": "27/05/2020",
       "end": "08/11/2021",
-      "details": "Full-stack developer experienced in HTML, CSS, Javascript, Node.js, React.js and NLP"
+      "details": "Frontend developer experienced in HTML, CSS, Javascript, React.js, Python, Node.js, NLP and AWS"
     },
     {
       "designation": "Internship",
@@ -93,9 +93,18 @@
   "technicalSkills": [
     {
       "title": "Front End Development",
-      "list": ["HTML 5", "CSS", "JavaScript", "React JS"]
+      "list": [
+        "HTML 5",
+        "CSS",
+        "Bootstrap",
+        "Tailwind",
+        "JavaScript",
+        "TypeScript",
+        "React JS",
+        "React Native"
+      ]
     },
-    { "title": "Back End Development", "list": ["Node JS"] },
+    { "title": "Back End Development", "list": ["Node JS", "Express"] },
     {
       "title": "Microsoft Office",
       "list": ["Microsoft Word", "Microsoft Excel", "Microsoft PowerPoint"]
@@ -124,36 +133,16 @@
       "link": "https://www.heyrides.ca"
     },
     {
-      "title": "Impact of People’s Emotion on the Crypto Market",
-      "details": "Conducted an in-depth analysis of a Twitter dataset related to the Russian-Ukraine War, obtained from Kaggle, to gain insights into public sentiments and reactions. Utilized advanced data cleaning techniques to ensure the dataset's accuracy and reliability. Leveraged TextBlob and IBM Watson NLP for sentiment analysis on the tweets, assessing the emotions expressed by users during the conflict. Developed visually compelling data visualizations depicting the variations in cryptocurrency trends in response to people's emotions during this period.",
-      "date": "2023"
-    },
-    {
       "title": "Mini-terminal",
       "details": "Designed and implemented robust client-server connections using the TCP protocol. Implemented load balancing techniques to effectively distribute network traffic between primary and secondary servers. Handled client-side requests, processed them on the server side to deliver requested data and files, and implemented secure, scalable solutions to cater to diverse client needs.",
       "date": "2023",
       "link": "https://github.com/S-r-e-e-V/C_Socket_Programming"
     },
     {
-      "title": "NoSQL Injection detection in MongoDB using Machine Learning",
-      "details": "Conducted research to determine the most effective machine learning methods for detecting injection attacks on MongoDB databases using a NoSQL injection dataset. Compared the performance of various classifiers, including Logistic Regression, Decision Tree, Support Vector Machines, Naive Bayes, Gradient Boosting, and Random Forest, based on F1 Score, Recall, Precision, and Accuracy. Concluded that the Random Forest classifier was the best for NoSQL injection detection in MongoDB.",
-      "date": "2023"
-    },
-    {
       "title": "Diary Application",
       "details": "Developed a cutting-edge text editor for a diary application using React.js, integrating visually appealing themes and a dark mode feature to enhance the user experience. Strengthened application security by implementing JWT token authentication to safeguard user data and prevent unauthorized access. Ensured top-level data protection by implementing robust password encryption techniques for secure storage of sensitive information in the database.",
       "date": "2022",
       "link": "https://diary-website.netlify.app"
-    },
-    {
-      "title": "Logistic Application",
-      "details": "An application to efficiently manage logistics transportation, ensuring seamless delivery of goods. Featured an integrated Google Maps function for real-time vehicle tracking, comprehensive transaction details reports for enhanced data visibility, and Firebase push notifications for timely updates. Implemented multi-language functionality and right-to-left (RTL) support, improving accessibility for diverse users. Utilized service workers to enable notifications even when the website was inactive, enhancing user engagement and convenience.",
-      "date": "2021"
-    },
-    {
-      "title": "Working model of Self-driving Vehicle",
-      "details": "A self-driving vehicle embedded with a convolutional neural network and shortest path algorithm for predicting the best path and direction which enables safe travel from one location to another.",
-      "date": "2020"
     },
     {
       "title": "TicTacToe puzzle Game Android App",
@@ -166,11 +155,6 @@
       "details": "Utilized Android's built-in Text-to-Speech (TTS) engine to deliver seamless and interactive speech capabilities, enhancing user experience and accessibility. Integrated text-to-speech and speech recognition functionalities into various communication channels, including SMS, Email, and cross-application copying, empowering users to effortlessly communicate and interact with the app's content.",
       "date": "2020",
       "link": "https://play.google.com/store/apps/details?id=com.speech.voice_text"
-    },
-    {
-      "title": "Life Source - Blood Bank Management System",
-      "details": "A simple and efficient system for Blood bank management. This system has a real-time geo-powered network of blood donors which allows the hospital to search directly for nearby blood donors thus reducing the middle-man and saving time.",
-      "date": "2018"
     }
   ],
 

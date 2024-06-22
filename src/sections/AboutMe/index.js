@@ -5,6 +5,18 @@ import Profile from "../../constants/Portfolio";
 import Heading from "../../components/Heading";
 
 export default function AboutMe() {
+  const redirect = (url) => {
+    const section = document.getElementById(url);
+    const headerHeight = document.querySelector(".top-nav").offsetHeight; // Get the height of the fixed header
+    if (section) {
+      const topPosition = section.offsetTop - headerHeight; // Adjust scroll position by subtracting header height
+      window.scrollTo({
+        top: topPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <div className="aboutme" id="about">
       <Heading
@@ -25,9 +37,7 @@ export default function AboutMe() {
           </div>
           <div className="designation">
             Designation :{" "}
-            <span className="content">
-              {Profile.workExperience[0].designation}
-            </span>
+            <span className="content">{Profile.profileInfo.designation}</span>
           </div>
 
           {/* <div className="languages">
@@ -43,11 +53,11 @@ export default function AboutMe() {
         </div>
         <div className="section2">
           <div className="boxes">
-            <span className="projects">
+            <span className="projects" onClick={() => redirect("projects")}>
               <span className="content">{Profile.projects.length}</span>
               Completed Projects
             </span>
-            <span className="awards">
+            <span className="awards" onClick={() => redirect("awards")}>
               <span className="content">{Profile.awards.length}</span>
               {Profile.awards.length > 1 ? " Awards Won" : " Award Won"}
             </span>

@@ -20,8 +20,8 @@ export default function LandingPage() {
         <Home />
         <AboutMe />
         <Experience />
-        <Education />
         <Projects />
+        <Education />
         <Publications />
         <Awards />
       </div>
