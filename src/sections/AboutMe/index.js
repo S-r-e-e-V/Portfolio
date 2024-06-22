@@ -47,7 +47,16 @@ export default function AboutMe() {
               {Profile.languageSkills.otherLanguages.join(",")}
             </span>
           </div> */}
-          <a href={process.env.PUBLIC_URL + "CV.pdf"} download="CV">
+          {/* <a href={process.env.PUBLIC_URL + "CV.pdf"} download="CV">
+            Download CV
+          </a> */}
+          <a
+            href={
+              "https://docs.google.com/document/d/1nOWLuYrivwpLulSYsc8Dz1CfoyTdd5FW/edit?usp=sharing&ouid=114449552700623681459&rtpof=true&sd=true"
+            }
+            target="_blank"
+            download="CV"
+          >
             Download CV
           </a>
         </div>
