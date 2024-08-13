@@ -118,6 +118,12 @@
 
   "projects": [
     {
+      "title": "WordArc",
+      "details": "Developed and launched a multiplayer word puzzle game inspired by Wordle, utilizing JavaScript, React Native, Firebase, and MongoDB. Implemented secure user authentication, a dynamic leaderboard, and a user profile section to track progress and win percentage. Deployed the backend on a self-hosted server with data stored in MongoDB and connected a custom domain. Enhanced player engagement through challenge features and ensured Play Store compliance by addressing policy violations for smooth deployment.",
+      "date": "2024",
+      "link": "https://play.google.com/store/apps/details?id=com.wordlemultiplayer"
+    },
+    {
       "title": "Heyrides",
       "details": "Accomplished the development of Heyrides, a comprehensive ride-sharing application facilitating seamless commuting between diverse locations. Successfully integrated an intuitive user interface, featuring user-specific pages and an efficient admin dashboard. Users can effortlessly book rides from one location to another, with the added convenience of receiving notifications via email.",
       "date": "2024",

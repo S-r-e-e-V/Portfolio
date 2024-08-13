@@ -1,4 +1,4 @@
-import Profile from "./Frontend.json";
+import Profile from "./Profile.json";
 export default Profile;
 
 //   work_experience 👷🏻‍♀️
