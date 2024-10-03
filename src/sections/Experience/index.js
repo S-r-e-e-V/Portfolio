@@ -35,9 +35,9 @@ export default function Experience() {
               <div>
                 Location : <span>{item.location}</span>
               </div>
-              <div>
+              {/* <div>
                 Details :<span> {item.details}</span>
-              </div>
+              </div> */}
             </div>
           </div>
         ))}
